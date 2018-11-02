@@ -29,7 +29,7 @@ namespace UnitTests
         [ExpectedException(typeof(NotFiniteNumberException))]
         public void TriangleNaNLine1Exception()
         {
-            /* Создание и вызов объекта Circle */
+            /* Создание и вызов объекта */
             Triangle triangle = new Triangle(double.NaN, 1, 1);
         }
 
@@ -53,7 +53,7 @@ namespace UnitTests
         [ExpectedException(typeof(NotFiniteNumberException))]
         public void TriangleNaNLine2Exception()
         {
-            /* Создание и вызов объекта Circle */
+            /* Создание и вызов объекта */
             Triangle triangle = new Triangle(1, double.NaN, 1);
         }
 
@@ -77,7 +77,7 @@ namespace UnitTests
         [ExpectedException(typeof(NotFiniteNumberException))]
         public void TriangleNaNLine3Exception()
         {
-            /* Создание и вызов объекта Circle */
+            /* Создание и вызов объекта */
             Triangle triangle = new Triangle(1, 1, double.NaN);
         }
 
