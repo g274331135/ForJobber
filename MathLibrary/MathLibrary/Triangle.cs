@@ -33,17 +33,17 @@ namespace MathLibrary
             this.LineC = lineC;
 
             /* Вычисляем является ли треугольник прямоугольным */
-            if ((this.LineA * this.LineA + this.LineB * this.LineB == this.LineC * this.LineC) 
-                || (this.LineA * this.LineA + this.LineC * this.LineC == this.LineB * this.LineB) 
-                || (this.LineC * this.LineC + this.LineB * this.LineB == this.LineA * this.LineA))
+            if ((lineA * lineA + lineB * lineB == lineC * lineC) 
+                || (lineA * lineA + lineC * lineC == lineB * lineB) 
+                || (lineC * lineC + lineB * lineB == lineA * lineA))
                 this.IsRectangular = true;
 
             /* Является ли треугольник равнобедренным */
-            if (this.LineA == this.LineB || this.LineB == this.LineC || this.LineC == this.LineA)
+            if (lineA == lineB || lineB == lineC || lineC == lineA)
                 this.IsIsosceles = true;
 
             /* Является ли треугольник равносторонним */
-            if (this.LineA == this.LineB && this.LineB == this.LineC)
+            if (lineA == lineB && lineB == lineC)
                 this.IsEquilateral = true;
         }
         public override double Square()
