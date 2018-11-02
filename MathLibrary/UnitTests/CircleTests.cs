@@ -36,7 +36,7 @@ namespace UnitTests
         [TestMethod]
         public void CirclePositiveRadius()
         {
-            var values = new[] { 0.0000001, 0.1, 0.2, 1, 2, 1024 };
+            var values = new[] { 0.0000001, 0.1, 0.931784563, 1, 2, 1024 };
 
             values.ToList().ForEach(val =>
             {
