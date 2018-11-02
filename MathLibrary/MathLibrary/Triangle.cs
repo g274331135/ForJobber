@@ -32,9 +32,6 @@ namespace MathLibrary
                 throw new NotFiniteNumberException("Параметр lineC должен быть больше 0", lineC);
             this.LineC = lineC;
 
-            var sum2 = this.LineA * this.LineA + this.LineB * this.LineB;
-            var res = this.LineC * this.LineC;
-
             /* Вычисляем является ли треугольник прямоугольным */
             if ((this.LineA * this.LineA + this.LineB * this.LineB == this.LineC * this.LineC) 
                 || (this.LineA * this.LineA + this.LineC * this.LineC == this.LineB * this.LineB) 
